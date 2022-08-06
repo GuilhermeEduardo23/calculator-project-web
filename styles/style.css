@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+#imagem {
+    width: 100%;
+    height: 100vh;
+    background: url('../components/images/fundo.jpg');
+    background-size: cover;
+    position: static;
+}
+
+img{
+    height: 50px;
+}
+
+h1 {
+    font-family: poppinsmedium;
+    font-size: 40px;
+}
+
+main {
+    width: 40%;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px;
+    position: absolute;
+    background-color: white;
+    top: 15%; /*25%*/
+    left: 30%; /*30%*/
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+select {
+    width: 40px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: 2px solid green;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-family: poppinsmedium;
+}
+
+button:hover {
+    background-color: white;
+    color: green;
+    transition: 0.3s all;
+    cursor: pointer;
+}
+
+h3 {
+    font-family: poppinsmedium;
+    font-size: 20px;
+}
+
+#me {
+    font-family: poppinslight;
+}
+
+span {
+    font-weight: bolder;
+    color: green;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="styles/fonts.css">
+        <link rel="icon" href="components/icons/icons8-calculadora-32.png">
+        <title>Calculadora</title>
+    </head>
+    <body>
+        
+        <div id="imagem"></div>
+
+        <main>
+            <header>
+                <h1>Calculadora <img src="components/images/icons8-calculadora.gif"></h1>
+            </header>
+
+            <input type="number" id="n1" placeholder="Informe um número" required> <br><br>
+                
+            <select id="selector">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select> <br><br>
+
+            <input type="number" id="n2" placeholder="Informe outro número" required> <br><br>
+
+            <button onclick="calcular()">Calcular</button>
+
+            <div>
+                <h3 id="resultado"></h3>
+            </div>
+
+            <footer>
+                <p id="me">Developed by: <span>Guilherme Eduardo</span></p>
+            </footer>
+        </main>
+        
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
