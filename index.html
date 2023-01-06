@@ -10,34 +10,47 @@
         <link rel="icon" href="components/icons/icons8-calculadora-32.png">
         <title>Calculadora</title>
     </head>
+
     <body>
-        
-        <div id="imagem"></div>
-
         <main>
-            <header>
-                <h1>Calculadora <img src="components/images/icons8-calculadora.gif"></h1>
-            </header>
+            <img class="fundo">
+            
+            <div class="container">
+                <header>
+                    <h1>Calculadora</h1>
+                    <img class="icon-calculadora" src="components/images/icons8-calculadora.gif">
+                </header>
 
-            <input type="number" id="n1" placeholder="Informe um número" required> <br><br>
+                <div class="input">
+                    <input type="number" id="n1" placeholder="Informe um número" required>
+                </div>
+
+                <div class="input">
+                    <select id="selector">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                    </select>
+                </div>
                 
-            <select id="selector">
-                <option value="+">+</option>
-                <option value="-">-</option>
-                <option value="*">*</option>
-                <option value="/">/</option>
-            </select> <br><br>
+                <div class="input">
+                    <input type="number" id="n2" placeholder="Informe outro número" required>
+                </div>
 
-            <input type="number" id="n2" placeholder="Informe outro número" required> <br><br>
+                <button>Calcular</button>
 
-            <button onclick="calcular()">Calcular</button>
-
-            <div>
-                <h3 id="resultado"></h3>
+                <div>
+                    <h3 id="resultado"></h3>
+                </div>
             </div>
 
+            
+
+            
+
             <footer>
-                <p id="me">Developed by: <span>Guilherme Eduardo</span></p>
+                <p>Developed by: <span>Guilherme Eduardo</span></p>
             </footer>
         </main>
         

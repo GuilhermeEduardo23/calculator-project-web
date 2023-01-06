@@ -1,7 +1,10 @@
 function calcular(n1, n2) {
     n1 = parseFloat(document.getElementById("n1").value);
     n2 = parseFloat(document.getElementById("n2").value);
+    informacao = document.getElementById("resultado");
     selector = document.getElementById("selector").value;
+
+    const numeroNaoInformado = n1 === `` || n2 === ``;
 
     switch(selector) {
         case '+':
