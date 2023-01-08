@@ -146,8 +146,7 @@ span {
     color: green;
 }
 
-@media only screen and (max-device-width: 900px) {
-   
+@media (max-width: 900px) {
     .container {
         width: 350px;
         height: 600px;
