@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="styles/fonts.css">
         <link rel="icon" href="components/icons/icons8-calculadora-32.png">
         <title>Calculadora</title>
     </head>
@@ -16,10 +15,10 @@
             <img class="fundo">
             
             <div class="container">
-                <header>
+                <div class="title">
                     <h1>Calculadora</h1>
                     <img class="icon-calculadora" src="components/images/icons8-calculadora.gif">
-                </header>
+                </div>
 
                 <div class="input">
                     <input type="number" id="n1" placeholder="Informe um número" required>
@@ -38,16 +37,13 @@
                     <input type="number" id="n2" placeholder="Informe outro número" required>
                 </div>
 
-                <button>Calcular</button>
-
-                <div>
-                    <h3 id="resultado"></h3>
+                <div class="botoes">
+                    <button id="calculate">Calcular</button>
+                    <button id="clean">Limpar</button>
                 </div>
+                
+                <div class="resultado" id="result"></div>
             </div>
-
-            
-
-            
 
             <footer>
                 <p>Developed by: <span>Guilherme Eduardo</span></p>
