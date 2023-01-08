@@ -147,18 +147,29 @@ span {
 }
 
 @media(max-width: 1080px)  and (max-height: 2340px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    
     .fundo {
         display: none;
     }
 
     .title {
-        font: bold 1.8rem 'Poppins';
+        font: bold 1.0rem 'Poppins';
     }
 
     .container {
-        width: 50vw;
+        width: 500px;
         height: 50vh;
-        border-radius: 50px;
+        border: none;
+        position: absolute;
     }
 
     footer {
