@@ -151,9 +151,14 @@ span {
         display: none;
     }
 
+    .title {
+        font: bold 1.8rem 'Poppins';
+    }
+
     .container {
-        width: 50vw;
-        height: 50vh;
+        width: 900px;
+        height: 1000px;
+        border-radius: 50px;
     }
 
     footer {
