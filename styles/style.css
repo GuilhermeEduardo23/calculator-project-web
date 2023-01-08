@@ -156,8 +156,8 @@ span {
     }
 
     .container {
-        width: 900px;
-        height: 1000px;
+        width: 50vw;
+        height: 50vh;
         border-radius: 50px;
     }
 
