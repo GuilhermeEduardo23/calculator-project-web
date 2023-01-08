@@ -40,7 +40,7 @@ function limpar() {
 
     n1.value = clean;
     n2.value = clean;
-    resultado.textContent = ``;
+    resultado.textContent = clean;
 }
 
 clean.addEventListener(`click`, limpar);
