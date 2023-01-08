@@ -38,8 +38,8 @@ function limpar() {
     let n2 = document.getElementById(`n2`);
     let resultado = document.getElementById(`result`);
 
-    n1.value = ``;
-    n2.value = ``;
+    n1.value = clean;
+    n2.value = clean;
     resultado.textContent = ``;
 }
 
