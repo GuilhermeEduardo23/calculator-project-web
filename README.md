@@ -2,5 +2,6 @@
 
 Um projeto de calculadora para web, com o objetivo de difundir os conhecimentos em HTML, CSS e Javascript.
 
+![Captura de tela 2023-01-08 185309](https://user-images.githubusercontent.com/88467676/211225797-002743e9-2c28-4fbb-a40f-e63250c4673a.png)
 
-![Captura de tela 2022-08-06 132102](https://user-images.githubusercontent.com/88467676/183262759-9a2821d0-f0ad-4ed9-8b69-c771cef19ada.png)
+![Imagem do WhatsApp de 2023-01-08 à(s) 18 52 18](https://user-images.githubusercontent.com/88467676/211225798-0132af78-52c1-4dd0-a7ef-5f4d4301b770.jpg)
