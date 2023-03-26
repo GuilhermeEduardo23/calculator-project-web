@@ -9,7 +9,7 @@ function calcular(n1, n2) {
             break;
         case '-':
             calculo = (n1 - n2);
-            break;
+            break; //Teste de commit
         case '*':
             calculo = (n1 * n2);
             break;
