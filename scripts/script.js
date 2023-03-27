@@ -25,12 +25,14 @@ function calcular(n1, n2) {
 }
 
 window.addEventListener(`load`, () => {
+    const largura = document.querySelector(`body`).clientWidth,
+        altura = document.querySelector(`body`).clientHeight;
+    
     const fundo = document.querySelector(`#imagem`);
 
-    fundo.setAttribute(`src`, `https://source.unsplash.com/2300x1300/?airplane`);
+    fundo.setAttribute(`src`, `https://source.unsplash.com/${largura}x${altura}/?calculator`);
 
     const calculadora = document.querySelector(`main`);
-
     calculadora.classList.add(`active`);
 
     const principal = document.querySelector(`body`);
