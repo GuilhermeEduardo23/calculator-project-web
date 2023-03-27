@@ -35,5 +35,5 @@ window.addEventListener(`load`, () => {
     const calculadora = document.querySelector(`main`);
     calculadora.classList.add(`active`);
 
-    console.log(`Largura da Main: ${calculadora.clientWidth}px`);
+    alert(`Largura do Body: ${largura}\nAltura do Body: ${altura}`);
 });
