@@ -27,7 +27,7 @@ function calcular(n1, n2) {
 window.addEventListener(`load`, () => {
     const fundo = document.querySelector(`#imagem`);
 
-    fundo.setAttribute(`src`, `https://source.unsplash.com/2000x1300/?calculator`);
+    fundo.setAttribute(`src`, `https://source.unsplash.com/2300x1300/?airplane`);
 
     const calculadora = document.querySelector(`main`);
 
@@ -35,7 +35,4 @@ window.addEventListener(`load`, () => {
 
     const principal = document.querySelector(`body`);
     principal.classList.add(`responsive`);
-
-    if(principal.classList.value === `responsive`)
-        fundo.setAttribute(`src`, `https://source.unsplash.com/375x667/?calculator`);
 });
