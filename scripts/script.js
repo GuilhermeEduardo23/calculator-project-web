@@ -1,4 +1,18 @@
-function calcular(n1, n2) {
+window.addEventListener(`load`, () => {
+    const largura = document.querySelector(`body`).clientWidth,
+        altura = document.querySelector(`body`).clientHeight;
+    
+    const fundo = document.querySelector(`#imagem`);
+
+    fundo.setAttribute(`src`, `https://source.unsplash.com/${largura}x${altura}/?calculator`);
+
+    const calculadora = document.querySelector(`main`);
+    calculadora.classList.add(`active`);
+});
+
+const btnCalcular = document.querySelector(`button`);
+
+btnCalcular.addEventListener(`click`, () => {
     n1 = parseFloat(document.querySelector("#n1").value);
     n2 = parseFloat(document.querySelector("#n2").value);
     selector = document.querySelector("#selector").value;
@@ -15,24 +29,19 @@ function calcular(n1, n2) {
             break;
         case '/':
             calculo = Math.round((n1 / n2));
+            
             if(Number.isNaN(calculo)) {
                 document.querySelector("#resultado").innerText = "Insira um divisível válido!";
             }
             break;
     }
 
-    document.querySelector("#resultado").innerText = `Resultado = ${calculo}`;
-}
+    const resultado = document.getElementById(`resultado`);
 
-window.addEventListener(`load`, () => {
-    const largura = document.querySelector(`body`).clientWidth,
-        altura = document.querySelector(`body`).clientHeight;
-    
-    const fundo = document.querySelector(`#imagem`);
+    resultado.classList.add(`resultado-active`);
 
-    fundo.setAttribute(`src`, `https://source.unsplash.com/${largura}x${altura}/?calculator`);
+    resultado.textContent = `Resultado: ${calculo}`;
 
     const calculadora = document.querySelector(`main`);
-    calculadora.classList.add(`active`);
-
+    calculadora.classList.add(`active-result`);    
 });
