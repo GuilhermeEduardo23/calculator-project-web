@@ -1,18 +1,8 @@
-@media(max-width: 412px) {
-    img {
-        display: none;
-    }
-
-    .responsive {
-        min-height: 100vh;
-        background: linear-gradient(45deg, white, green, blue);
-        background-size: 300% 300%;
-        animation: gradientColor 20s ease-in-out infinite;
-    }
-
+@media(max-width: 500px) {
     main {
-        width: 90%;
-        background: #fff;
+        width: calc(100% - 30px);
+        backdrop-filter: blur(50px);
+        -webkit-backdrop-filter: blur(50px);
     }
 
     footer {
