@@ -1,47 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
     display: flex;
-    text-align: center;
     align-items: center;
-    flex-direction: column;
-    margin: 0;
+    justify-content: center;
+    min-height: 100vh;
 }
 
 #imagem {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    background: url('../components/images/fundo.jpg');
     background-size: cover;
-    position: static;
-}
-
-img{
-    height: 50px;
+    background-repeat: no-repeat;
 }
 
 h1 {
-    font-family: poppinsmedium;
     font-size: 40px;
+    text-align: center;
 }
 
 main {
-    width: 40%;
-    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid black;
     padding: 20px;
     border-radius: 10px;
-    box-sizing: border-box;
     box-shadow: 5px 5px 5px;
-    position: absolute;
-    background-color: white;
-    top: 15%; /*25%*/
-    left: 30%; /*30%*/
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    transform: scale(0);
+    transition: transform 3s;
+}
+
+.active {
+    transform: scale(1);
+}
+
+main h1 {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
 }
 
 input {
-    width: 100%;
-    height: 40px;
-    box-sizing: border-box;
+    width: 200px;
+    height: 50px;
     border: 2px solid black;
     border-radius: 10px;
+}
+
+input::placeholder {
+    color: #000;
+    text-align: center;
 }
 
 select {
@@ -51,33 +75,44 @@ select {
 }
 
 button {
-    background-color: green;
+    background-color: rgb(6, 81, 8);
     color: white;
-    border: 2px solid green;
+    border: 2px solid rgb(6, 81, 8);
     width: 100%;
     height: 40px;
     box-sizing: border-box;
     border-radius: 10px;
-    font-family: poppinsmedium;
+    transition: .5s all;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
 button:hover {
     background-color: white;
-    color: green;
-    transition: 0.3s all;
-    cursor: pointer;
+    color: rgb(6, 81, 8);
+    letter-spacing: 5px;
 }
 
-h3 {
-    font-family: poppinsmedium;
-    font-size: 20px;
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    height: 25px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid black;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    padding: 15px;
 }
 
 #me {
-    font-family: poppinslight;
+    font-size: 16px;
 }
 
-span {
+footer span {
     font-weight: bolder;
-    color: green;
+    color: rgb(6, 81, 8);
 }

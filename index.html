@@ -6,18 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="stylesheet" href="styles/style.css">
-        <link rel="stylesheet" href="styles/fonts.css">
-        <link rel="icon" href="components/icons/icons8-calculadora-32.png">
+       <link rel="stylesheet" href="./styles/responsive.css">
+        <script src="./scripts/script.js" defer></script>
         <title>Calculadora</title>
     </head>
+    
     <body>
-        
-        <div id="imagem"></div>
+        <img src="" alt="Fundo" id="imagem">
 
         <main>
-            <header>
-                <h1>Calculadora <img src="components/images/icons8-calculadora.gif"></h1>
-            </header>
+            <h1>Calculadora</h1>
 
             <input type="number" id="n1" placeholder="Informe um número" required> <br><br>
                 
@@ -32,15 +30,11 @@
 
             <button onclick="calcular()">Calcular</button>
 
-            <div>
-                <h3 id="resultado"></h3>
-            </div>
-
-            <footer>
-                <p id="me">Developed by: <span>Guilherme Eduardo</span></p>
-            </footer>
+            <div id="resultado"></div>
         </main>
-        
-        <script src="scripts/script.js"></script>
+
+        <footer>
+            <p id="me"><strong>Developed by: </strong><span>Guilherme Eduardo</span></p>
+        </footer>
     </body>
 </html>
