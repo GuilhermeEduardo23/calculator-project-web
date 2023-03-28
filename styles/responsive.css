@@ -8,8 +8,6 @@
 
     main {
         max-width: 90%;
-        backdrop-filter: blur(50px);
-        -webkit-backdrop-filter: blur(50px);
     }
 
     footer {

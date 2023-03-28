@@ -49,9 +49,14 @@ btnCalcular.addEventListener(`click`, () => {
 const clear = document.getElementById(`limpar`);
 
 clear.addEventListener(`click`, () => {
-    let n1 = document.querySelector(`#n1`).value,
-        n2 = document.querySelector(`#n2`).value,
-        seletores = document.querySelector(`#selector`).value;
+    let n1 = document.querySelector(`#n1`),
+        n2 = document.querySelector(`#n2`),
+        seletores = document.querySelector(`#selector`),
+        divResultado = document.getElementById(`resultado`);
 
-    n1.value = ``;
+    n1.value = null;
+    n2.value = null;
+    seletores.value = `+`;
+    divResultado.textContent = null;
+    divResultado.classList.remove(`resultado-active`);
 });
