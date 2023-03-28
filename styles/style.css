@@ -36,15 +36,15 @@ main {
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
     transform: scale(0);
-    transition: 1s;
+    transition: transform 1s ease;
 }
 
-.active {
+main.active {
     transform: scale(1);
 }
 
-.active.active-result {
-    height: 384px;
+main.active-result {
+    height: 400px;
 }
 
 main h1 {
@@ -87,6 +87,7 @@ select {
     border-radius: 10px;
     text-align: center;
     background: #d3d3d3;
+    margin-top: 10px;
 }
 
 #buttons {
