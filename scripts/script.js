@@ -10,7 +10,7 @@ window.addEventListener(`load`, () => {
     calculadora.classList.add(`active`);
 });
 
-const btnCalcular = document.querySelector(`button`);
+const btnCalcular = document.getElementById(`calcular`);
 
 btnCalcular.addEventListener(`click`, () => {
     n1 = parseFloat(document.querySelector("#n1").value);
@@ -44,4 +44,14 @@ btnCalcular.addEventListener(`click`, () => {
 
     const calculadora = document.querySelector(`main`);
     calculadora.classList.add(`active-result`);    
+});
+
+const clear = document.getElementById(`limpar`);
+
+clear.addEventListener(`click`, () => {
+    let n1 = document.querySelector(`#n1`).value,
+        n2 = document.querySelector(`#n2`).value,
+        seletores = document.querySelector(`#selector`).value;
+
+    n1.value = ``;
 });
